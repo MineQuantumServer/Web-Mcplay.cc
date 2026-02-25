@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<!-- 
+  量子科技网站 HTML 代码
+  版本: 1.3
+  作者: FortyTwo
+  最后更新: 2026年1月
+  备注: 
+    - 这是一个 Minecraft 工业生存服务器的官方网站
+    - 包含游戏介绍、下载链接、公告和赞助信息
+	- 又拉了一坨屎上去
+	- 又拉了一坨屎上去
+-->
+
+<html lang="zh-CN">
+<head>
+  <!-- 基础元数据 -->
+  <meta charset="utf-8">
+  <title>量子科技 - 工业生存服务器</title>
+  <meta name="description" content="量子科技是一个 Minecraft 1.21.1工业服务器，提供独特的工业生存体验">
+  <meta name="keywords" content="我的世界, 我的世界服务器, 我的世界模组, Mods, 工业, 生存, 科技, MC, Minecraft, Minebbs, Klpbbs, Mcmod, 机械动力, 应用能源, AE2, 植物魔法, 气动工艺, 龙之进化">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- 禁止右键菜单和查看源代码 -->
+  <body onContextMenu="alert('禁止查看源代码，您的行为已记录。'); return false" 
+        NOOP="if (window.event != null && window.event.button == 2) alert ('Thanks...');">
+  
+  <!-- 网站图标 -->
+  <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/LOGO.png">
+  
+  <!-- CSS 样式表 -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/base.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/flexslider.css" rel="stylesheet">
+  <link href="css/magnific-popup.css" rel="stylesheet">
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/nav-container.css" rel="stylesheet">
+  <link href="css/stats.css" rel="stylesheet">
+  <link href="css/mods.css" rel="stylesheet">
+  <link href="css/photo.css" rel="stylesheet">
+  
+  <!-- Google 字体 镜像 -->
+  <!--
+  <link href="https://fonts.proxy.ustclug.org/css?family=Dosis:100,300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.proxy.ustclug.org/css?family=Raleway:100,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.proxy.ustclug.org/css?family=Open+Sans:300i,300,400,400i,600,700,800" rel="stylesheet">
+  -->
+  <link href="https://fonts.bunny.net/css?family=Dosis:200,300,400,600,700" rel="stylesheet" />
+  <link href="https://fonts.bunny.net/css?family=Raleway:100,400,500,600,700" rel="stylesheet" />
+  <link href="https://fonts.bunny.net/css?family=Open+Sans:300,300i,400,400i,600,700,800" rel="stylesheet" />
+  
+</head>
+
+<body>
+  <!-- 页面加载动画 -->
+  <div class="loader">
+    <div class="loader-inner">
+      <svg class="loading-spinner" height="220" version="1.1" viewbox="0 0 100 100" width="120" xmlns="http://www.w3.org/2000/svg">
+        <circle class="spinner" cx="50" cy="50" fill="#13181d" r="21" stroke-width="2"></circle>
+      </svg>
+    </div>
+  </div>
+
+  <!-- 网站头部导航 -->
+  <header class="header default">
+    <!-- 左侧logo -->
+    <div class="left-part">
+      <a class="logo scroll" href="index.html#wrapper">
+        <h2 class="mb-0 uppercase">量子科技</h2>
+      </a>
+    </div>
+    
+    <!-- 右侧导航菜单 -->
+    <div class="right-part">
+      <nav class="main-nav">
+        <!-- 移动端菜单切换按钮 -->
+        <div class="toggle-mobile-but">
+          <a class="mobile-but" href="index.html#">
+            <div class="lines"></div>
+          </a>
+        </div>
+        
+        <!-- 主菜单 -->
+        <ul class="main-menu list-inline">
+          <li><a class="scroll list-inline-item" href="index.html#wrapper">主页</a></li>
+          <li><a class="scroll list-inline-item" href="index.html#status">游戏</a></li>
+          <li><a class="scroll list-inline-item" href="index.html#gallery">画廊</a></li>
+          <li><a class="scroll list-inline-item" href="index.html#store">赞助</a></li>
+          <li><a class="scroll list-inline-item" href="index.html#rules">须知</a></li>
+          <li><a class="scroll list-inline-item" href="index.html#news">公告</a></li>
+		  <li><a class="list-inline-item" href="https://wiki.mcplay.cc" target="_blank" rel="noopener noreferrer">Wiki</a></li>
+		  <li><a class="list-inline-item" href="https://skin.mcplay.cc" target="_blank" rel="noopener noreferrer">皮肤站</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 主轮播图区域 -->
+  <section class="hero">
+    <div class="main-slider slider flexslider">
+      <ul class="slides">
+        <!-- 第一张轮播图 - 游戏介绍 -->
+        <li>
+          <div class="background-img overlay zoom">
+            <img alt="游戏截图" src="img/11.png">
+          </div>
+          <div class="container hero-content">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <div class="inner-hero logo">
+                  <h1 class="large text-white uppercase mb-0">量子科技</h1>
+                  <h4 class="mb-0 text-white uppercase">
+                    一个致力于做1.21.1版本的工业类型服务器<br>
+                    用心做好服务器
+                  </h4>
+                  <br>
+                  <a class="btn btn-primary uppercase border-2" href="https://download.mcplay.cc">
+                    <h4>游戏下载</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- 第二张轮播图 -->
+        <li>
+          <div class="background-img overlay zoom">
+            <img alt="游戏视频介绍" src="img/12.png">
+          </div>
+          <div class="container hero-content">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <div class="inner-hero">
+                  <h1 class="large text-white uppercase mb-0">观看视频!</h1>
+                  <h5 class="mb-0 text-white uppercase">观看视频了解我们的最新内容,欢迎各位莅临!</h5>
+                  <a class="video-play-but popup-youtube" href="https://www.bilibili.com/video/BV" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- 第三张轮播图 -->
+        <li>
+          <div class="background-img overlay zoom">
+            <img alt="截图" src="img/13.png">
+          </div>
+          <div class="container hero-content">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <div class="inner-hero logo">
+                  <h1 class="large text-white uppercase mb-0">200+Mods</h1>
+                  <h5 class="mb-0 text-white uppercase">
+                    丰富的Mods让您体验更多的乐趣！
+					多线程的游玩丰富您的体验！
+                  </h5>
+                  <br>
+                  <a class="btn btn-primary uppercase border-2" href="https://qm.qq.com/cgi-bin/qm/qr?k=BAjSMZRM-sRNEMdHpWRCxmMSOO7WfQ2a&jump_from=webapi&authKey=K1Ep5ADlbEJVyQ+DaZBvxpEF/XzjTwzcqisqPfY6GV9PzAfLUAiG0viFVC7cXInY">
+                    <h4>加入QQ群</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 服务器状态区域 -->
+  <section class="latest main" id="status">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
+          <div class="block-content text-center front-p">
+            <h1 class="uppercase">当前共有 <span data-playercounter-ip="mcplay.cc">0</span> 位探索者在线</h1>
+            <p class="lead">赶快点击下方按钮加入我们吧!</p>
+            <a class="btn btn-primary uppercase border-2" href="https://qm.qq.com/cgi-bin/qm/qr?k=BAjSMZRM-sRNEMdHpWRCxmMSOO7WfQ2a&jump_from=webapi&authKey=K1Ep5ADlbEJVyQ+DaZBvxpEF/XzjTwzcqisqPfY6GV9PzAfLUAiG0viFVC7cXInY">
+              <h5>加入 QQ 群</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+<!-- 统计卡片 -->
+    <section class="stats-section">
+      <div class="stats-container">
+        <h2 class="uppercase" style="text-align: center;">我们致力于为玩家提供高质量游戏体验</h2>
+        <p class="lead" style="text-align: center;">让科技与魔法触手可及，为每一位玩家赋能</p>
+    
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-value">4年+</div>
+            <div class="stat-label">服务器运营</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">210+</div>
+            <div class="stat-label">精选Mods</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">2300+</div>
+            <div class="stat-label">注册玩家</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">98%+</div>
+            <div class="stat-label">服务器在线率</div>
+          </div>
+        </div>
+    </section>
+
+    <!-- 服务器特色介绍 -->
+    <div class="container">
+      <ul class="news-list">
+      <ul class="news-list popup-gallery">
+        <!-- 特色1 -->
+        <li class="row align-items-center justify-content-around">
+          <div class="col-12 col-md-6 order-md-2">
+            <div class="block-content gallery-item">
+              <a href="img/21.png" title="家园与生存共存">
+                <img alt="家园与生存" class="img-fluid animated" src="img/21.png">
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 order-md-1">
+            <div class="block-content text-left">
+              <h2>家园与生存共存</h2>
+              <p class="lead">
+                服务器采用家园世界和生存世界双家机制，<br>
+                您既可以在家园世界稳定创造，<br>
+                也可以在生存世界圈地冒险！
+              </p>
+            </div>
+          </div>
+        </li>
+      
+        <!-- 特色2 -->
+        <li class="row align-items-center justify-content-around">
+          <div class="col-12 col-md-6 order-1">
+            <div class="block-content gallery-item">
+              <a href="img/22.png" title="适当轻微魔改">
+                <img alt="轻微魔改" class="img-fluid animated" src="img/22.png">
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 order-2 text-left">
+            <div class="block-content text-left">
+              <h2>适当轻微魔改</h2>
+              <p class="lead">
+                适当轻微的魔改，<br>
+                修复了大量BUG，<br>
+                也节约了自动化的难题！
+              </p>
+            </div>
+          </div>
+        </li>
+      
+        <!-- 特色 -->
+        <li class="row align-items-center justify-content-around">
+          <div class="col-12 col-md-6 order-md-2">
+            <div class="block-content gallery-item">
+              <a href="img/23.png" title="长期周目：平民亦可无尽">
+                <img alt="可做无尽" class="img-fluid animated" src="img/23.png">
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 order-md-1">
+            <div class="block-content text-left">
+              <h2>可做无尽</h2>
+              <p class="lead">
+                在长达 6 个月的周目中，<br>
+                即使无氪金玩家，<br>
+                也能做出无尽套！
+              </p>
+            </div>
+          </div>
+        </li>
+      
+        <!-- 特色4 -->
+        <li class="row align-items-center justify-content-around">
+          <div class="col-12 col-md-6 order-1">
+            <div class="block-content gallery-item">
+              <a href="img/24.png" title="高性能硬件支撑">
+                <img alt="高性能服务器" class="img-fluid animated" src="img/24.png">
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 order-2 text-left">
+            <div class="block-content text-left">
+              <h2>高性能服务器</h2>
+              <p class="lead">
+                服务器使用 13600K 与 128GB 内存，<br>
+                采用 BC 群组服架构，<br>
+                给你流畅的游戏体验！
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      </ul>
+    </div>
+  </section>
+<!-- 模组展示 -->   
+    <section class="main bg-secondary" id="mods">
+      <div class="container">
+        <div class="block-content text-center gap-one-bottom-md">
+          <h1 class="uppercase">核心模组体系</h1>
+          <p class="lead">基于 KubeJS 配方平衡，告别模组冲突，体验极致流程</p>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="mod-card">
+              <span class="badge-mod bg-tech">核心科技</span>
+              <h4>通用机械 (Mekanism)</h4>
+              <p>1.21.1 工业支柱。从基础矿石五倍产出到复杂的裂变反应堆。</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="mod-card">
+              <span class="badge-mod bg-tech">机械美学</span>
+              <h4>机械动力 (Create)</h4>
+              <p>基于转动能的工业革命，实现高度可视化的工厂自动化。</p>
+            </div>
+         </div>
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="mod-card">
+              <span class="badge-mod bg-tech">数字大脑</span>
+              <h4>应用能源 2 (AE2)</h4>
+              <p>强大的数字化存储系统，解决后期数以万计的物资管理难题。</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="mod-card">
+              <span class="badge-mod bg-tech">沉浸体验</span>
+              <h4>沉浸工程 (IE)</h4>
+              <p>极具真实感的重工业模组，包含大型多方块结构与高压输电系统。</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="mod-card">
+              <span class="badge-mod bg-custom" style="background-color: #ff66aa;">东方幻想</span>
+              <h4>车万女仆 (TLM)</h4>
+              <p>为你的世界增添可爱的女仆，她们不仅是伴侣，更是生产力。</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="mod-card">
+              <span class="badge-mod bg-tech">工业革新</span>
+              <h4>工业先锋 (IF)</h4>
+              <p>加了大量有趣实用的新机器，让你的自动化更简单。</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="mod-card">
+              <span class="badge-mod bg-magic">法术魔法</span>
+              <h4>新生魔艺 (Ars Nouveau)</h4>
+              <p>自由度极高的法术系统、解放双手的魔法设备以及各种的魔法道具。</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="mod-card">
+              <span class="badge-mod bg-tech">智能网络</span>
+              <h4>集成动力 (ID)</h4>
+              <p>一个能为你实现构建复杂自动化和系统集成网络的模组。</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="mod-card">
+              <span class="badge-mod bg-ultimate">终极目标</span>
+              <h4>无尽贪婪 (Avaritia)</h4>
+              <p>长周目核心。亲手打造足以改写服务器法则的无尽套装。</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="mod-card">
+              <span class="badge-mod bg-ultimate">龙之力量</span>
+              <h4>龙之进化 (DE)</h4>
+              <p>提供极致的能源存储方案与觉醒装备，挑战混沌之龙。</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="mod-card">
+              <span class="badge-mod bg-magic">自然魔法</span>
+              <h4>植物魔法 (Botania)</h4>
+              <p>以自然之力赋能工业，实现魔法与自动化的完美融合。</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="mod-card">
+              <span class="badge-mod bg-magic">秘术召唤</span>
+              <h4>神秘学 (Occultism)</h4>
+              <p>召唤异界精灵为你工作，开启全自动化的仪式化采矿。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- 服务器画廊 -->
+  <section class="main" id="gallery">
+    <div class="container">
+      <div class="block-content text-center gap-one-bottom-md">
+        <h1 class="uppercase">服务器画廊</h1>
+        <p class="lead">点击下方图片可查看高清大图并左右切换</p>
+      </div>
+      <div class="row popup-gallery">
+        <!-- 画廊图片 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="gallery-item">
+            <a href="img/hl0.jpg" title="主城远景">
+              <img src="img/hl0.jpg" alt="画廊图片">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="gallery-item">
+            <a href="img/hl1.png" title="主城夜景">
+              <img src="img/hl1.png" alt="画廊图片">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="gallery-item">
+            <a href="img/hl2.png" title="玩家基地">
+              <img src="img/hl2.png" alt="画廊图片">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="gallery-item">
+            <a href="img/hl3.png" title="地标建筑">
+              <img src="img/hl3.png" alt="画廊图片">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="gallery-item">
+            <a href="img/hl4.png" title="教员雕像">
+              <img src="img/hl4.png" alt="画廊图片">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="gallery-item">
+            <a href="img/hl5.png" title="戴森球计划小太阳">
+              <img src="img/hl5.png" alt="画廊图片">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="gallery-item">
+            <a href="img/hl6.png" title="玩家地基">
+              <img src="img/hl6.png" alt="画廊图片">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="gallery-item">
+            <a href="img/hl7.png" title="雕像">
+              <img src="img/hl7.png" alt="画廊图片">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="gallery-item">
+            <a href="img/hl8.png" title="看二次元看的">
+              <img src="img/hl8.png" alt="画廊图片">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 赞助区域 -->
+  <section class="about overlay main" id="store">
+    <div class="background-img">
+      <img alt="赞助背景图" src="img/4.jpg">
+    </div>
+    <div class="container">
+      <div class="row vertical-align">
+        <div class="col-lg-5 col-md-10">
+          <div class="front-p">
+            <h1 class="uppercase text-white">助力!</h1>
+            <p class="lead">
+              服务器玩法的开发、运维、制作、更新都将耗费巨大的精力，
+              您的支持是我们前进的最大动力。<br>
+              量子科技服务器感谢各位玩家支持、一路有你才是我们最值得高兴的事情。
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="block-content text-md-right front-p">
+                <a class="btn btn-primary uppercase border-2" href="https://docs.qq.com/sheet/DV1BVWGRFbUdsZHJp">
+                  <h5>点我查看服务器账目</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 玩家须知区域 -->
+  <section class="tour main bg-secondary" id="rules">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-9">
+          <div class="block-content gap-one-bottom-md text-center">
+            <div class="block-title">
+              <h1 class="uppercase">玩家须知</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8 col-md-10">
+          <ul class="block-tab">
+            <li class="active">
+              <div class="block-content gap-one-top-sm text-left">
+                <!-- 规则1 -->
+                <div class="block-content">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                      <h4 class="switch-fot">1.</h4>
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                      <h6 class="mb-0 opc-70 uppercase">规则</h6>
+                      <p class="lead">
+                        每一个探索者必须遵守的<a href="code.html#">《玩家守则》</a>
+                        注册后即表示你已经阅读并同意。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                
+                <!-- 规则2 -->
+                <div class="block-content">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                      <h4 class="switch-fot">2.</h4>
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                      <h6 class="mb-0 opc-70 uppercase">帮助</h6>
+                      <p class="lead">
+                        嘿!看这里<a href="https://wiki.mcplay.cc/">Wiki</a>或许对你有用。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                
+                <!-- 规则3 -->
+                <div class="block-content">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                      <h4 class="switch-fot">3.</h4>
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                      <h6 class="mb-0 opc-70 uppercase">游戏遇到问题？</h6>
+                      <p class="lead">
+                        加入官方 <a href="https://qm.qq.com/cgi-bin/qm/qr?k=BAjSMZRM-sRNEMdHpWRCxmMSOO7WfQ2a&jump_from=webapi&authKey=K1Ep5ADlbEJVyQ+DaZBvxpEF/XzjTwzcqisqPfY6GV9PzAfLUAiG0viFVC7cXInY">QQ群</a> ，
+                        在群里提出问题，会有人解答的。
+						你也可以自己查看官方WIki，获得答案。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 公告区域 -->
+  <section class="news main bg-secondary" id="news">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-9">
+          <div class="block-content gap-one-bottom-md text-center">
+            <div class="block-title">
+              <h1 class="uppercase">公告!</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <ul class="news-list">
+      <ul class="news-list popup-gallery">
+        <!-- 公告 1 -->
+        <li class="row align-items-center justify-content-around">
+          <div class="col-12 col-md-6 order-md-2">
+            <div class="block-content gallery-item">
+              <a href="img/31.png" title="1.12.2 版本起源">
+                <img alt="1.12.2版本" class="img-fluid" src="img/31.png">
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 order-md-1">
+            <div class="block-content text-left">
+              <span class="mb-2 opc-70">2022年12月1日</span>
+              <h2>1.12.2 版本起源</h2>
+              <p class="lead">
+                量子科技 1.12.2 正式开放，拥有超 150+ Mods 的 BC 群服架构，最高同时在线人数曾达 22 人。
+              </p>
+            </div>
+          </div>
+        </li>
+      
+        <!-- 公告 2 -->
+        <li class="row align-items-center justify-content-around">
+          <div class="col-12 col-md-6 order-1">
+            <div class="block-content gallery-item">
+              <a href="img/32.png" title="1.16.5 版本创新公测">
+                <img alt="1.16.5创新" class="img-fluid" src="img/32.png">
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 order-2">
+            <div class="block-content text-left">
+              <span class="mb-2 opc-70">2023年8月1日</span>
+              <h2>1.16.5 版本创新</h2>
+              <p class="lead">
+                采用 lightfall 技术实现群服优化，拥有 180+ Mods，显著降低各子服负担，开启公测新时代。
+              </p>
+            </div>
+          </div>
+        </li>
+      
+        <!-- 公告 3 -->
+        <li class="row align-items-center justify-content-around">
+          <div class="col-12 col-md-6 order-md-2">
+            <div class="block-content gallery-item">
+              <a href="img/33.png" title="1.16.5 版本正式开放">
+                <img alt="1.16.5正式版" class="img-fluid" src="img/33.png">
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 order-md-1">
+            <div class="block-content text-left">
+              <span class="mb-2 opc-70">2024年7月1日</span>
+              <h2>1.16.5 版本正式开放</h2>
+              <p class="lead">
+                修复了大量公测阶段的 BUG，服务器运行更加稳定，最高同时在线人数达到 19 人。
+              </p>
+            </div>
+          </div>
+        </li>
+      
+        <!-- 公告 4 -->
+        <li class="row align-items-center justify-content-around">
+          <div class="col-12 col-md-6 order-1">
+            <div class="block-content gallery-item">
+              <a href="img/mods.png" title="1.21.1 版本内测开启">
+                <img alt="1.21.1版本" class="img-fluid" src="img/mods.png">
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 order-2">
+            <div class="block-content text-left">
+              <span class="mb-2 opc-70">2025年8月2日</span>
+              <h2>1.21.1 版本创新内测</h2>
+              <p class="lead">
+                引入 VC 端保留群服架构，超 200+ 模组深度体验，进一步优化子服负载，解决卡顿烦恼。
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+	  
+      </ul>
+    </div>
+  </section>
+
+  <!-- 页脚区域 -->
+  <footer class="pt-5 pb-5 footer">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+      <!-- HTML 结构 -->
+      <div id="nav-container">
+        <div class="row">
+          <div class="col-md-6 col-xl-4">
+            <strong class="nav-title">相关链接</strong>
+              <a href="https://www.minebbs.com/threads/23404/" class="nav-link">Minebbs</a>
+              <a href="https://klpbbs.com/thread-143378-1-1.html" class="nav-link">苦力怕论坛</a>
+              <a href="https://play.mcmod.cn/sv20187880.html" class="nav-link">MC百科</a>
+              <a href="https://mclists.cn/server/7997.html" class="nav-link">MC服务器列表</a>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <strong class="nav-title">导航</strong>
+              <a href="https://wiki.mcplay.cc" class="nav-link">Wiki</a>
+              <a href="https://skin.mcplay.cc" class="nav-link">皮肤站</a>
+              <a href="https://github.com/FortyTwoCn/MineQuantumServer" class="nav-link">Github</a>
+              <a href="https://docs.qq.com/sheet/DV1BVWGRFbUdsZHJp" class="nav-link">服务器账目</a>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <strong class="nav-title">联系我们</strong>
+              <a href="https://qm.qq.com/cgi-bin/qm/qr?k=BAjSMZRM-sRNEMdHpWRCxmMSOO7WfQ2a&jump_from=webapi&authKey=K1Ep5ADlbEJVyQ+DaZBvxpEF/XzjTwzcqisqPfY6GV9PzAfLUAiG0viFVC7cXInY" class="nav-link">QQ</a>
+              <a href="mailto:admin@mcplay.cc" class="nav-link">邮箱</a>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <strong class="nav-title">友情链接</strong>
+              <a href="https://www.xn--dctt54dhmrbwo.com/" class="nav-link">齿轮盛宴整合包</a>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="row justify-content-between align-items-center">
+        <div class="col-md-6 col-xl-12 text-center">
+          <span class="small"><strong>量子科技</strong> &copy; 2022-2025</span><br>
+          <span class="small"><strong>声明：</strong>本站与Mojang以及微软公司没有从属关系</span><br>
+          <span class="small d-inline-flex align-items-center justify-content-center">
+            <img src="https://www.mcmod.cn/images/police.png" width="15" height="17" style="margin-right: 4px; vertical-align: middle;">
+            <a target="_blank" rel="noopener noreferrer" href="https://beian.miit.gov.cn/">辽ICP备2025052297号-3</a>
+          </span>
+          <br><br>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- 返回顶部按钮 -->
+  <a class="block-top scroll" href="index.html#wrapper">
+    <i class="icon-angle-up"></i>
+  </a>
+
+  <!-- JavaScript 脚本 -->
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/placeholders.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/counter.min.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/online.js"></script>
+  <script src="js/clipboard.min.js"></script>
+  <script src="js/gallery-init.js"></script> 
+
+</body>
+</html>

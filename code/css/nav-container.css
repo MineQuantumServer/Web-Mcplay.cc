@@ -1,0 +1,33 @@
+          /* 确保 #nav-container 不影响布局 */
+          #nav-container {
+            width: 100%;
+          }
+
+          /* 导航栏均匀分布 */
+          #nav-container .row {
+            display: flex;
+            justify-content: space-between; /* 或 space-around / space-evenly */
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+          }
+
+          /* 列自动扩展 */
+          #nav-container .col-md-6.col-xl-4 {
+            flex: 1;
+            min-width: 200px;
+          }
+
+          /* 标题和链接样式 */
+          #nav-container .nav-title {
+            font-size: 20px;
+            display: block;
+            margin-bottom: 8px;
+          }
+
+          #nav-container .nav-link {
+            font-size: 15px;
+            display: block;
+            margin-bottom: 5px;
+          }

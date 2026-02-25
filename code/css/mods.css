@@ -1,0 +1,22 @@
+    .mod-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 20px;
+      transition: all 0.3s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .mod-card:hover {
+      transform: translateY(-8px);
+      background: rgba(255, 255, 255, 0.08);
+      border-color: #007bff;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .mod-card h4 { font-size: 1.1rem; color: #fff; margin-bottom: 10px; }
+    .mod-card p { font-size: 0.85rem; color: #aaa; line-height: 1.6; margin-bottom: 0; }
+    .badge-mod { font-size: 0.65rem; text-transform: uppercase; padding: 4px 8px; border-radius: 4px; margin-bottom: 10px; width: fit-content; display: block; }
+    .bg-tech { background: #007bff; }
+    .bg-magic { background: #28a745; }
+    .bg-ultimate { background: #ffc107; color: #000; }
